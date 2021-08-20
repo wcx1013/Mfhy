@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xzq.module_base.views.DrawableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_toast_msg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast"
+    android:drawablePadding="12pt"
+    android:gravity="center|bottom"
+    android:includeFontPadding="false"
+    android:lineSpacingExtra="3pt"
+    android:minWidth="120pt"
+    android:minHeight="120pt"
+    android:paddingLeft="10pt"
+    android:paddingTop="26pt"
+    android:paddingRight="10pt"
+    android:paddingBottom="19pt"
+    android:textColor="@color/toast_text"
+    android:textSize="14pt"
+    app:dtv_drawableHeight="42pt"
+    app:dtv_drawableTop="@drawable/cb"
+    app:dtv_drawableWidth="42pt"
+    tools:text="提交失败">
+
+</com.xzq.module_base.views.DrawableTextView>

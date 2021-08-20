@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/wx"
+    android:background="@color/color_0F0C3A">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0pt" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="328pt"
+            android:layout_height="180pt"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/moj" />
+
+        <RelativeLayout
+            android:layout_width="328pt"
+            android:layout_height="144pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19pt">
+
+            <ImageView
+                android:id="@+id/monimf"
+                android:layout_width="152pt"
+                android:layout_height="match_parent"
+                android:background="@drawable/monimf" />
+
+            <ImageView
+                android:id="@+id/mofgs"
+                android:layout_width="153pt"
+                android:layout_height="68pt"
+                android:layout_marginLeft="17pt"
+                android:layout_toRightOf="@id/monimf"
+                android:background="@drawable/mofgs" />
+
+            <ImageView
+                android:id="@+id/mofzs"
+                android:layout_width="153pt"
+                android:layout_height="68pt"
+                android:layout_below="@id/mofgs"
+                android:layout_marginLeft="17pt"
+                android:layout_marginTop="8pt"
+                android:layout_toRightOf="@id/monimf"
+                android:background="@drawable/mofzs" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22pt"
+            android:layout_width="344pt"
+            android:layout_height="135pt"
+            android:background="@drawable/rmbg"
+            >
+            <TextView
+                android:id="@+id/tit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="魔方入门"
+                android:textColor="@color/white"
+                android:textSize="16pt"
+                android:layout_marginTop="12pt"
+                 android:layout_marginLeft="10pt"
+                />
+            <com.xzq.module_base.views.DrawableTextView
+                android:id="@+id/rm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textSize="11pt"
+                android:textColor="#646D98"
+                app:dtv_drawableRight="@drawable/qu"
+                app:dtv_drawableWidth="12pt"
+                app:dtv_drawableHeight="12pt"
+                android:layout_toRightOf="@+id/tit"
+                android:drawablePadding="5pt"
+                android:layout_marginLeft="206pt"
+                android:layout_marginTop="16pt"
+                />
+        <HorizontalScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40pt"
+
+            >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="75pt"
+        android:id="@+id/recyc"
+        />
+
+</LinearLayout>
+        </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15pt"
+            android:layout_width="344pt"
+            android:layout_height="315pt"
+            android:background="@drawable/lyuanbg"
+            >
+        <TextView
+            android:id="@+id/titleyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="魔方乐园"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            android:layout_marginTop="12pt"
+            android:layout_marginLeft="10pt"
+            />
+        <com.xzq.module_base.views.DrawableTextView
+            android:id="@+id/ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textSize="11pt"
+            android:textColor="#646D98"
+            app:dtv_drawableRight="@drawable/qu"
+            app:dtv_drawableWidth="12pt"
+            app:dtv_drawableHeight="12pt"
+            android:layout_toRightOf="@+id/titleyuan"
+            android:drawablePadding="5pt"
+            android:layout_marginLeft="206pt"
+            android:layout_marginTop="16pt"
+            />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:id="@+id/leyuanlist"
+                android:layout_below="@+id/titleyuan"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

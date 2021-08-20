@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xzq.module_base.dialog.LoadingImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+    android:clickable="false"
+    android:drawablePadding="20dp"
+    android:gravity="center_horizontal"
+    android:textColor="@color/color_999999"
+    android:textSize="16sp" />

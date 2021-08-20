@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10pt"
+    android:layout_marginBottom="10pt"
+    android:layout_marginStart="5pt"
+    android:layout_marginEnd="5pt"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="208pt"
+            android:background="@drawable/lyuanbg">
+
+            <am.widget.shapeimageview.ShapeImageView
+                android:id="@+id/iv_img"
+                android:layout_width="298pt"
+                android:layout_height="130pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15pt"
+                android:scaleType="centerCrop"
+                app:sivRoundRectRadius="8pt"
+                app:sivShape="RoundRect" />
+
+            <ImageView
+               android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60pt"
+                android:background="@drawable/bofang"
+                android:layout_width="40pt"
+                android:layout_height="40pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15pt"
+                android:layout_marginLeft="15pt"
+                >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:background="@drawable/bg_biaoqian"
+                    android:layout_marginLeft="15pt"
+                    android:text="dedfjej"
+                    android:id="@+id/tv_jichu"
+                    android:textSize="10pt"
+                    android:layout_marginTop="5pt"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:background="@drawable/bg_biaoqian"
+                    android:layout_marginLeft="7pt"
+                    android:text="dedfjej"
+                    android:id="@+id/tv_remen"
+                    android:textSize="10pt"
+                    android:layout_marginTop="5pt"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/titlej"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dhwegddhuiewdghewgdwegd"
+                    android:textSize="14pt"
+                    android:layout_marginTop="5pt"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15pt"
+                    />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="74pt"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="18pt"
+        android:layout_height="18pt"
+        android:background="@drawable/eye"
+        android:layout_marginBottom="10pt"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_read"
+        android:text="200人观看"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15pt"
+
+        />
+
+</LinearLayout>
+<!--            <com.xzq.module_base.views.DrawableTextView-->
+<!--                android:layout_marginBottom="15pt"-->
+<!--                android:layout_marginRight="40pt"-->
+<!--                android:layout_gravity="bottom|right"-->
+<!--                android:layout_marginTop="3pt"-->
+<!--                android:id="@+id/tv_read"-->
+<!--                android:drawablePadding="10pt"-->
+<!--                android:drawableTop="@drawable/eye"-->
+<!--                app:dtv_drawableWidth="18pt"-->
+<!--                app:dtv_drawableHeight="18pt"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/textSize_12"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:text="0"/>-->
+        </FrameLayout>
+
+
+
+</LinearLayout>

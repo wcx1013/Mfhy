@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">module_base</string>
+   <!-- <string name="ba_load_more_empty_msg">一我是有底线的一</string>-->
+    <string name="ba_load_more_empty_msg">── 我是有底线的 ──</string>
+    <string name="ba_load_more_err_msg">点击重新加载</string>
+
+    <string name="str_wechat_install">您需要安装微信客户端</string>
+    <string name="str_facebook_install">您需要安装Facebook客户端</string>
+
+</resources>

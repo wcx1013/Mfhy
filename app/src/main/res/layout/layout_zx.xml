@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000"
+    >
+    <LinearLayout
+
+
+        android:layout_width="304pt"
+        android:layout_height="467pt"
+        android:background="@drawable/tankuang"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销须知"
+            android:textSize="21pt"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15pt"
+            />
+
+        <TextView
+            android:layout_marginTop="20pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#160;&#160;&#160;&#160;&#160;&#160;您如果注销该账号后：\n&#160;&#160;&#160;&#160;  1，您将不再享有本产品相关服务及专属会 员权益。 \n&#160;&#160;&#160;&#160;&#160;&#160;2，您将再也无法进行登录，忘记密码操作。 \n&#160;&#160;&#160;&#160;&#160;&#160;3，您账户的个人资料及历史信息将无法找 回。 \n&#160;&#160;&#160;&#160;&#160;&#160;4，您账户中如果存在优惠卷未使用，注销后将不能\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;再使用。 \n&#160;&#160;&#160;&#160;&#160;&#160;5，除法律法规要求必须保存的信息以外， 您的用户\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;信息我们将予以删除。您账户下所有行为信息记录，\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将无法找回。"
+            />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1pt"
+    android:background="@color/translucent_white_20"
+    android:layout_marginTop="70pt"
+    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50pt"
+                android:text="取消"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18pt"
+                android:id="@+id/qx"
+                />
+            <View
+                android:layout_width="1pt"
+                android:layout_height="wrap_content"
+                android:background="@color/translucent_white_20"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50pt"
+                android:text="确定"
+                android:textSize="18pt"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/qd"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

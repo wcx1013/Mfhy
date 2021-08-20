@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45pt"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="13pt"
+        android:layout_height="20pt"
+        android:background="@mipmap/fan"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14pt"
+        android:id="@+id/fn"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注销成功"
+        android:textSize="18pt"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="118pt"
+        />
+</LinearLayout>
+    <ImageView
+        android:layout_width="95pt"
+        android:layout_height="95pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42pt"
+        android:background="@drawable/dug"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您，注销成功"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32pt"
+        android:textSize="20pt"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000">
+<LinearLayout
+
+
+    android:layout_width="250pt"
+    android:layout_height="210pt"
+    android:background="@drawable/tankuang"
+    android:orientation="vertical"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="欢迎使用魔方还原"
+    android:textColor="@color/black"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10pt"
+    />
+    <TextView
+        android:id="@+id/tongyis"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="20pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;感谢您信任并使用魔方还原的产品和服务。在您使用魔方还原App前，请认真阅读并了解我们的《用户协议》和《隐私政策》。"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20pt"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+           android:text="再想想"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/zaixiangxiang"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+           android:text="同意"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tongyi"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

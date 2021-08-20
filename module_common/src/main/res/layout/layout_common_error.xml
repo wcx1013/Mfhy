@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_error_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:clickable="false"
+    android:drawablePadding="20dp"
+    android:gravity="center_horizontal"
+    android:lineSpacingExtra="10dp"
+    android:paddingTop="120dp"
+    android:text="网络开小差去啦\n点击重新加载"
+    android:textColor="@color/color_999999"
+    android:textSize="16sp" />

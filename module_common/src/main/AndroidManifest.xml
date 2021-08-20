@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xzq.module_base">
+
+    <application>
+
+        <activity
+            android:name=".act.ViewSingleImageActivity"
+            android:theme="@style/transparent_activity" />
+
+        <activity
+            android:name=".act.ViewImageActivity"
+            android:theme="@style/transparent_activity" />
+
+    </application>
+
+</manifest>

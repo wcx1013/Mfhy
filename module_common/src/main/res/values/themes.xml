@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/themeColor</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/ripple_dark</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="toolbarNavigationButtonStyle">@style/NavigationButtonStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="toolbarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme" />
+<!--    parent="Theme.AppCompat.Light.NoActionBar"-->
+    <style name="WelcomeTheme" parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/appqid </item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/transparent</item>
+    </style>
+
+
+
+
+    <style name="GuideTheme" parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/transparent</item>
+    </style>
+
+    <style name="MySplashTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

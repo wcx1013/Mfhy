@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15pt">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center"
+        android:text="用户协议"
+        android:textColor="@color/black"
+        android:textSize="16pt"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/dlg_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15pt"
+        android:gravity="center|start"
+        android:lineSpacingExtra="10pt"
+        android:text="感谢您选择登腾！\n我们将通过《用户协议》帮助您了解我们收集、使用、存储和共享个人信息的情况，特别是我们所采集的个人信息及其用途。同时您还可以了解到您所享有的相关权利以及我们为了保护好您的个人信息所采用的相关策略。如您同意以上协议内容，请点击“同意”，并开始使用我们的产品和服务！"
+        android:textColor="@color/color_333333"
+        android:textSize="14pt"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:divider="@drawable/divider_vertical_1dp"
+        android:dividerPadding="15pt"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/dlg_tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_press"
+            android:gravity="center"
+            android:text="不同意"
+            android:textColor="@color/color_999999"
+            android:textSize="14pt"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dlg_tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_press"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/themeColor"
+            android:textSize="14pt"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

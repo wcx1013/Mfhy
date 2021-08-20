@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="45pt"
+                android:id="@+id/bars"
+                app:titleTextColor="@color/black"
+                app:navigationIcon="@mipmap/fan"
+
+                >
+                <TextView
+                    android:text="注册"
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20pt" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="55pt"
+                android:layout_height="55pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32pt"
+                android:background="@drawable/logtu"
+                />
+
+            <LinearLayout
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:gravity="center_vertical"
+                android:layout_marginTop="48pt"
+                android:layout_width="match_parent"
+                android:layout_height="45pt">
+                <!--                <TextView-->
+                <!--                    android:textSize="@dimen/textSize_15"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:text="+86"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"/>-->
+                <EditText
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:id="@+id/shoujihao"
+                    android:layout_marginStart="7pt"
+                    android:hint="请输入手机号"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/textSize_15"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_999999"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="1pt"/>
+            <EditText
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:id="@+id/mima"
+                android:textSize="@dimen/textSize_15"
+                android:textColorHint="#999999"
+                android:hint="6~18位注册密码"
+                android:layout_marginTop="20pt"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="45pt"/>
+            <View
+                android:background="@color/color_999999"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="1pt"/>
+
+            <TextView
+                android:layout_marginTop="43pt"
+                android:id="@+id/zhuce"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_16"
+                android:gravity="center"
+                android:text="注册"
+                android:background="@drawable/logan"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="45pt"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="已有账号直接登录"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20pt"
+    android:textSize="14pt"
+    android:id="@+id/dl"
+    />
+
+            <LinearLayout
+                android:layout_marginTop="180pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20pt"
+                >
+                <CheckBox
+                    android:id="@+id/gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv_pro"
+                    android:text="《用户协议》"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColor="#150D99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17pt"/>
+                <TextView
+                    android:id="@+id/tv_pros"
+                    android:text="《隐私政策》"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColor="#150D99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17pt"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

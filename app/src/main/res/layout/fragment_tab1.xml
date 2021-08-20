@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_0F0C3A">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+         />
+    <TextView
+        android:id="@id/toolbar_title"
+        style="@style/ToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18pt"
+        android:text="教程" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <LinearLayout
+            android:layout_width="337pt"
+            android:layout_height="328pt"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lyuanbg"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="12pt"
+                android:layout_marginLeft="10pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18pt"
+                android:text="魔方小站"
+                android:textColor="@color/white"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mfxiaozhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="vertical"
+            android:layout_marginLeft="9pt"
+            android:layout_marginTop="14pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18pt"
+                android:text="一看就懂"
+                android:textColor="@color/white"
+
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mfvideo"
+                android:layout_width="328pt"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

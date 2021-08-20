@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+
+    <item name="toolbar_btn_back" type="id" />
+    <item name="toolbar_btn_right_txt" type="id" />
+    <item name="toolbar_btn_right_icon" type="id" />
+    <item name="common_textView" type="id" />
+
+    <!--分页列表-->
+    <item name="refreshLayout" type="id" />
+    <item name="smartRefreshLayout" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="sfl" type="id" />
+    <!--状态页面-->
+    <item name="errorView" type="id" />
+    <item name="emptyView" type="id" />
+
+</resources>

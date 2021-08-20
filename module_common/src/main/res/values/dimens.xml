@@ -1,0 +1,28 @@
+<resources>
+
+    <!--dp start-->
+    <dimen name="toolbar_height">45pt</dimen>
+    <dimen name="toolbar_height_horizontal">45dp</dimen>
+    <dimen name="card_radius">4pt</dimen>
+    <dimen name="card_radius_me">10pt</dimen>
+    <!--dp end-->
+
+    <!--sp start-->
+    <dimen name="textSize_8">8pt</dimen>
+    <dimen name="textSize_9">9pt</dimen>
+    <dimen name="textSize_10">10pt</dimen>
+    <dimen name="textSize_11">11pt</dimen>
+    <dimen name="textSize_12">12pt</dimen>
+    <dimen name="textSize_13">13pt</dimen>
+    <dimen name="textSize_14">14pt</dimen>
+    <dimen name="textSize_15">15pt</dimen>
+    <dimen name="textSize_16">16pt</dimen>
+    <dimen name="textSize_17">17pt</dimen>
+    <dimen name="textSize_18">18pt</dimen>
+    <dimen name="textSize_19">19pt</dimen>
+    <dimen name="textSize_20">20pt</dimen>
+    <dimen name="textSize_21">21pt</dimen>
+    <dimen name="textSize_22">22pt</dimen>
+    <!--sp end-->
+
+</resources>

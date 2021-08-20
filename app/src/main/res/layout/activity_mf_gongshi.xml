@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F0C3A">
+
+<ImageView
+    android:layout_width="328pt"
+    android:layout_height="120pt"
+    android:background="@drawable/mfgs"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="15pt"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12pt"
+        android:id="@+id/recycgs"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/mfjiaocheng"-->
+<!--        android:layout_marginTop="12pt"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="337pt"-->
+<!--        android:layout_height="61pt"-->
+<!--        android:text="魔方公式口诀教程"-->
+<!--        android:background="@drawable/juxing"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:gravity="center_vertical"-->
+<!--       android:paddingLeft="20pt"-->
+<!--        android:textSize="16pt"-->
+<!--        />-->
+</LinearLayout>

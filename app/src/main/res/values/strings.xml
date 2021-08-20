@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">魔方还原</string>
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_classify">教程</string>
+    <string name="main_tab_demand">TAB2</string>
+    <string name="main_tab_shopping_cart">TAB3</string>
+    <string name="main_tab_me">我的</string>
+</resources>

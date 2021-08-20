@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act.ViewImageActivity">
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <com.bm.library.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/img_rlyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/img_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:minHeight="18dp"
+            android:textColor="@color/white"
+            android:textSize="18pt"
+            android:textStyle="normal"
+            tools:ignore="RelativeOverlap"
+            tools:text="1/2" />
+
+        <TextView
+            android:id="@+id/img_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_common_press_nomask"
+            android:padding="15dp"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="15pt"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</FrameLayout>

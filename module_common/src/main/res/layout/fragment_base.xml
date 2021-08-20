@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:id="@+id/v_frag_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--页面状态控件-->
+        <com.xzq.module_base.views.StateFrameLayout2
+            android:id="@id/sfl"
+            style="@style/StateFrameLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.xzq.module_base.views.StateFrameLayout2>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

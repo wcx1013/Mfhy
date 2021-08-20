@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xzq.module_base.views.DrawableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_toast_msg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast"
+    android:gravity="center"
+    android:includeFontPadding="false"
+    android:lineSpacingExtra="3pt"
+    android:paddingLeft="30pt"
+    android:paddingTop="12pt"
+    android:paddingRight="30pt"
+    android:paddingBottom="12pt"
+    android:textColor="@color/toast_text"
+    android:textSize="14pt"
+    tools:text="注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功注册成功">
+
+</com.xzq.module_base.views.DrawableTextView>

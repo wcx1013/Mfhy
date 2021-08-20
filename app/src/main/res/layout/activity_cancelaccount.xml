@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/ccv">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="45pt"
+                android:id="@+id/bars"
+                app:titleTextColor="@color/black"
+                app:navigationIcon="@mipmap/fan"
+
+                >
+                <TextView
+                    android:text="注销账号"
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20pt" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="55pt"
+                android:layout_height="55pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32pt"
+                android:background="@drawable/logtu"
+                />
+
+            <LinearLayout
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:gravity="center_vertical"
+                android:layout_marginTop="48pt"
+                android:layout_width="match_parent"
+                android:layout_height="45pt">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:id="@+id/shoujihao"
+                    android:layout_marginStart="7pt"
+                    android:hint="请输入手机号"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/textSize_15"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_999999"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="1pt"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="38pt"
+                android:layout_marginRight="37pt"
+                android:layout_height="56pt">
+
+                <EditText
+                    android:background="@null"
+
+                    android:hint="请输入验证码"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/textSize_16"
+                    android:textColor="@color/color_242424"
+                    android:id="@+id/yangzhengmaa"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="match_parent"/>
+
+                <com.xzq.module_base.views.CountDownButton
+                    android:id="@+id/huoquyanzhengm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textSize="14pt"
+                    app:cdFinishText="获取验证码"
+                    app:countDown="60000"
+                    app:countDownColor="@color/color_999999"
+                    app:countDownFormat="%d秒后可重发"
+                    app:countDownInterval="1000"
+                    app:enableCountDown="true"
+                    app:textColor="@color/color_4289FE" />
+            </LinearLayout>
+            <View
+                android:background="@color/color_999999"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="1pt"/>
+
+
+
+            <TextView
+                android:layout_marginTop="43pt"
+                android:id="@+id/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_16"
+                android:gravity="center"
+                android:text="注销"
+                android:background="@drawable/logan"
+                android:layout_marginStart="38pt"
+                android:layout_marginEnd="37pt"
+                android:layout_width="match_parent"
+                android:layout_height="45pt"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="220pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20pt"
+                >
+                <CheckBox
+                    android:id="@+id/gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv_pro"
+                    android:textColor="#150D99"
+                    android:text="同意《注销须知》"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17pt"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

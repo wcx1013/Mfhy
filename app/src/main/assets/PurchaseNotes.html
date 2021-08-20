@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+
+    getFromAndroid = function(str){
+        var arr = str.split(",");
+        var companyName=arr[0];
+        var appName=arr[1];
+
+        var appnameArray=document.getElementsByClassName("class_appname");
+        var companynameArray=document.getElementsByClassName("class_companyName");
+
+
+    for(var i=0;i<appnameArray.length;i++){
+      appnameArray[i].innerHTML=appName;
+     }
+
+     for(var j=0;j<companynameArray.length;j++){
+       companynameArray[j].innerHTML=companyName;
+     }
+}
+</script>
+</head>
+<body>
+<div>
+    <p> </p><font class="class_appname">魔方还原</font>会员协议与条款：
+
+    <p> 选择成为本产品的VIP会员，表明您已知悉并同意以下信息：</p>
+
+    <p>1. 本产品VIP会员的付费内容包含本APP内所有的免费/付费音频/视的观看权限。</p>
+
+    <p>2. 本产品VIP会员包括多种形式，使用时长取决于您的购买选择。“年度会员”“月度会员”可自行选择续费，续费后会员时间将叠加；购买“永久会员“后，所有内容无需再付费。</p>
+
+    <p>3. 本产品的VIP功能，都是虚拟服务，请您确认条款后进行支付，支付成功后，无论您是否在相应服务期限内实际使用或访问本产品，已支付的费用不支持退款。</p>
+
+    <p>4. 当您成功购买VIP会员，如出现依然无法使用您所购买的功能的情况，请您联系客服。</p>
+
+    <p>5. Android上购买的VIP课程无法在Iphone上通用。</p>
+
+    <p>6. 购买过程中请保持网络通畅，如遇到支付失败等问题，请联系客服。</p>
+
+    <p>7. 为保护会员账户安全，维护会员权益，本APP账户同一时间仅允许一台设备使用。如账户同时登陆多台设备，可能导致账号冻结。</p>
+
+    <p>8. 会员有义务保护自己支付账号的安全，VIP会员一旦购买，不能因支付密码泄露或误操作等原因发起退款。</p>
+
+    <p>9. 在法律允许的范围内，<font class="class_companyName">深圳市知愈心理咨询有限公司</font>有权根据产品计划和运营情况独立决定会员课程购买价格以及会员服务的具体内容，并享有对本产品及服务的最终解释权。</p>
+
+    <p>10. 客服QQ：2058582947</p>
+
+</div>
+</body>
+
+</html>

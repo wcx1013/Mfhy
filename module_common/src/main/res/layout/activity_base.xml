@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:context=".base.BaseActivity">
+
+    <include layout="@layout/merge_title" />
+
+    <View
+        android:id="@+id/v_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="10pt"
+        android:background="@color/common_divider"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_base" />
+
+</LinearLayout>

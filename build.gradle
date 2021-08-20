@@ -1,0 +1,79 @@
+//<component name="libraryTable">
+//  <library name="Gradle: com.jpeng:JPTabBar:1.4.0@aar">
+//    <CLASSES>
+//      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40d8be68611b823ccd7bdc2eed8e2874/jetified-JPTabBar-1.4.0/jars/classes.jar!/" />
+//      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40d8be68611b823ccd7bdc2eed8e2874/jetified-JPTabBar-1.4.0/res" />
+//      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40d8be68611b823ccd7bdc2eed8e2874/jetified-JPTabBar-1.4.0/AndroidManifest.xml" />
+//    </CLASSES>
+//    <JAVADOC>
+//      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jpeng/JPTabBar/1.4.0/4a7970a052717db9503111ca7e245dd574f7045c/JPTabBar-1.4.0-javadoc.jar!/" />
+//    </JAVADOC>
+//    <SOURCES>
+//      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jpeng/JPTabBar/1.4.0/696d615d246b7222d59ddfda49588024a3254160/JPTabBar-1.4.0-sources.jar!/" />
+//    </SOURCES>
+//  </library>
+//</component>
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        google()
+    }
+    // Android dependency 'com.android.support:design' has different version for the compile (25.3.1) and runtime (25.4.0) classpath.
+    // You should manually set the same version via DependencyResolution
+    subprojects {
+        project.configurations.all {
+            resolutionStrategy.eachDependency { details ->
+                if (details.requested.group == 'com.android.support'
+                        && !details.requested.name.contains('multidex')) {
+                    details.useVersion "28.0.0"
+                }
+            }
+        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // SDK、工具版本
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+
+    //support
+    supportVersion = '28.0.0'
+    //androidx ver
+    androidxVersion = '1.1.0'
+
+    //arouter compiler
+    arouterCompiler = '1.1.4'
+    //butterknife
+    butterknife = '10.2.1'
+    photoViewVersion = '1.4.1'
+    glideVersion = '4.10.0'
+}

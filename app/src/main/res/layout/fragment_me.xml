@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0C3A">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="246pt"
+        android:background="@drawable/img_my_bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0pt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="18pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32pt"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="115pt"
+        >
+
+        <am.widget.shapeimageview.ShapeImageView
+
+            android:id="@+id/tousxing"
+            android:layout_width="64pt"
+            android:layout_height="64pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/touxiang"
+            app:sivShape="Circle"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="16pt"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+            android:layout_marginLeft="6pt"
+    >
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="17pt"
+    android:textColor="@color/white"
+    android:text="用户名"
+    android:id="@+id/name"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="17pt"
+    android:textColor="@color/white"
+    android:text="距离会员到期还有4天"
+    android:id="@+id/daotime"
+    android:layout_marginTop="13pt"
+    />
+
+</LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/chakan"
+        android:layout_width="330pt"
+        android:layout_height="59pt"
+        android:background="@drawable/teq"
+        android:layout_marginTop="200pt"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="256pt"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/meshoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/geng"
+            android:paddingLeft="11pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="版本更新"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1pt"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.0.0"
+                android:textColor="@color/translucent_white"
+                android:layout_marginRight="10pt"
+                android:textSize="13pt"
+                />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan2"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/meshoucang"
+            app:layout_constraintBottom_toBottomOf="@id/meshoucang"
+            android:layout_marginRight="10pt"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/myyinhangka"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/guan"
+            android:paddingLeft="11pt"
+            app:layout_constraintTop_toBottomOf="@id/meshoucang"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="关于我们"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1pt"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan8"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/myyinhangka"
+            app:layout_constraintBottom_toBottomOf="@id/myyinhangka"
+            android:layout_marginRight="10pt"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/shouhuodizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/yin"
+            android:paddingLeft="11pt"
+            app:layout_constraintTop_toBottomOf="@id/myyinhangka"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="隐私政策"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan3"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:layout_marginRight="10pt"
+            app:layout_constraintTop_toTopOf="@id/shouhuodizhi"
+            app:layout_constraintBottom_toBottomOf="@id/shouhuodizhi"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/shiyongjilu"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/yi"
+            android:paddingLeft="11pt"
+            app:layout_constraintTop_toBottomOf="@id/shouhuodizhi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="意见反馈"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_weight="1"
+                />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan4"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/shiyongjilu"
+            app:layout_constraintBottom_toBottomOf="@id/shiyongjilu"
+
+            android:layout_marginRight="10pt"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/yao"
+            android:paddingLeft="11pt"
+            app:layout_constraintTop_toBottomOf="@id/shiyongjilu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="给我好评"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_weight="1"
+                />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan5"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/kefu"
+            app:layout_constraintBottom_toBottomOf="@id/kefu"
+            android:layout_marginRight="10pt"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <com.xzq.module_base.views.DrawableTextView
+            android:gravity="center_vertical"
+            android:id="@+id/zxzh"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:drawableStart="@drawable/zx"
+            android:paddingLeft="11pt"
+            app:layout_constraintTop_toBottomOf="@id/shiyongjilu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="注销账号"
+            android:textSize="14pt"
+            android:textColor="@color/white"
+            android:drawablePadding="6pt"
+            tools:ignore="MissingConstraints" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_weight="1"
+                />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fan6"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/picture_icon_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/kefu"
+            app:layout_constraintBottom_toBottomOf="@id/kefu"
+            android:layout_marginRight="10pt"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tuilogin"
+            android:layout_width="120pt"
+            android:layout_height="45pt"
+            android:text="退出登录"
+            android:textSize="18pt"
+            android:background="@drawable/tc"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50pt"
+            />
+    </LinearLayout>
+
+</FrameLayout>

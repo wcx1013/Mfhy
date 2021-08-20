@@ -1,0 +1,130 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTitle">
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">@dimen/textSize_18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">15pt</item>
+        <item name="android:paddingRight">15pt</item>
+    </style>
+
+    <!--状态布局样式-->
+    <style name="StateFrameLayoutStyle">
+        <item name="sflLoadingLayout">@layout/layout_common_loading</item>
+        <item name="sflEmptyLayout">@layout/layout_common_empty</item>
+        <item name="sflErrorLayout">@layout/layout_common_error</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="Widget.AppCompat.Light.ActionButton">
+        <item name="android:background">@drawable/bg_common_press_nomask</item>
+        <item name="android:minWidth">@dimen/toolbar_height</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+    </style>
+
+    <style name="NavigationButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:background">@drawable/bg_common_press_nomask</item>
+        <item name="android:minWidth">@dimen/toolbar_height</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="displayOptions">homeAsUp</item>
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="elevation">0dp</item>
+        <item name="navigationIcon">@drawable/ic_back</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="contentInsetEnd">@dimen/toolbar_height</item>
+        <!--<item name="contentInsetEnd">0dp</item>-->
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="LoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/FadeDialogAnimation</item>
+    </style>
+
+    <style name="FadeDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+
+    <style name="TransparentBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BaseDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="toolbarStyle">@style/ActionBarStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/ripple_dark</item>
+    </style>
+
+    <style name="TransparentDialogStyle" parent="BaseDialogStyle">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="BottomInDialogStyle" parent="TransparentDialogStyle">
+        <item name="android:windowAnimationStyle">@style/BottomInAnimation</item>
+    </style>
+
+    <style name="BottomInAnimation">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+
+    <style name="BottomTransparentDialogStyle" parent="TransparentDialogStyle">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="BottomTransparentFullscreenDialogStyle" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="DialogScaleAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_exit</item>
+    </style>
+
+    <style name="DialogScaleStyle" parent="TransparentDialogStyle">
+        <item name="android:windowAnimationStyle">@style/DialogScaleAnimation</item>
+    </style>
+
+    <style name="DialogFadeStyle" parent="TransparentDialogStyle">
+        <item name="android:windowAnimationStyle">@style/FadeDialogAnimation</item>
+    </style>
+
+    <!--透明activity的style-->
+    <style name="transparent_activity">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="BaseDialog" parent="android:Theme.Light">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
